@@ -70,7 +70,7 @@ const questions = [
     // using an arrow funciton to append the user input to the readme
    inquirer.prompt(questions).then((input) => {
 
-fs.writeFileSync("README.md", ("# " + input.title)+ "\n" + "\n", function(err) {
+fs.writeFileSync("Gen-README.md", ("# " + input.title)+ "\n" + "\n", function(err) {
     
     if (err){
         console.log(err);
@@ -80,7 +80,7 @@ fs.writeFileSync("README.md", ("# " + input.title)+ "\n" + "\n", function(err) {
     }
     
 })
-fs.writeFileSync("README.md", ("## " + "Description" + "\n" + input.description) + "\n" + "\n", function(err){
+fs.appendFileSync("Gen-README.md", ("## " + "Description" + "\n" + input.description) + "\n" + "\n", function(err){
     if (err){
         console.log(err)
     } else {
@@ -88,7 +88,7 @@ fs.writeFileSync("README.md", ("## " + "Description" + "\n" + input.description)
     }
 })
 
-fs.writeFileSync("README.md", ("## " + "Table of Contents" + "\n" + "* " + "[Installation](#installation)" + "\n" + "* " + "[License](#license)" + "\n" + "* " + "[Usage](#usage)" + "\n" + "* " + "[Contributing](#contributing)" + "\n" + "* " + "[Tests](#tests)" + "\n" + "* " + "[Questions](#questions)")  + "\n" + "\n", function(err){
+fs.appendFileSync("Gen-README.md", ("## " + "Table of Contents" + "\n" + "* " + "[Installation](#installation)" + "\n" + "* " + "[License](#license)" + "\n" + "* " + "[Usage](#usage)" + "\n" + "* " + "[Contributing](#contributing)" + "\n" + "* " + "[Tests](#tests)" + "\n" + "* " + "[Questions](#questions)")  + "\n" + "\n", function(err){
     if (err){
         console.log(err)
     } else {
@@ -96,7 +96,7 @@ fs.writeFileSync("README.md", ("## " + "Table of Contents" + "\n" + "* " + "[Ins
     }
 })
 
-fs.writeFileSync("README.md", ("## " + "Installation" + "\n" + input.installation) + "\n" + "\n", function(err){
+fs.appendFileSync("Gen-README.md", ("## " + "Installation" + "\n" + input.installation) + "\n" + "\n", function(err){
     if (err){
         console.log(err)
     } else {
@@ -104,7 +104,7 @@ fs.writeFileSync("README.md", ("## " + "Installation" + "\n" + input.installatio
     }
 })
 
-fs.writeFileSync("README.md", ("## " + "License"  + "\n" + "![badge](https://img.shields.io/badge/License-"+ input.license + "-green.svg)") + "\n" + "\n", function(err){
+fs.appendFileSync("Gen-README.md", ("## " + "License"  + "\n" + "![badge](https://img.shields.io/badge/License-"+ input.license + "-green.svg)") + "\n" + "\n", function(err){
     if (err){
         console.log(err)
     } else {
@@ -112,7 +112,7 @@ fs.writeFileSync("README.md", ("## " + "License"  + "\n" + "![badge](https://img
     }
 })
 
-fs.writeFileSync("README.md", ("## " + "Usage" + "\n" + input.usage) + "\n" + "\n", function(err){
+fs.appendFileSync("Gen-README.md", ("## " + "Usage" + "\n" + input.usage) + "\n" + "\n", function(err){
     if (err){
         console.log(err)
     } else {
@@ -120,7 +120,7 @@ fs.writeFileSync("README.md", ("## " + "Usage" + "\n" + input.usage) + "\n" + "\
     }
 })
 
-fs.writeFileSync("README.md", ("## " + "Contributing" + "\n" + input.contributing) + "\n" + "\n", function(err){
+fs.appendFileSync("Gen-README.md", ("## " + "Contributing" + "\n" + input.contributing) + "\n" + "\n", function(err){
     if (err){
         console.log(err)
     } else {
@@ -128,7 +128,7 @@ fs.writeFileSync("README.md", ("## " + "Contributing" + "\n" + input.contributin
     }
 })
 
-fs.writeFileSync("README.md", ("## " + "Tests:" + "\n" + input.tests) + "\n" + "\n", function(err){
+fs.appendFileSync("Gen-README.md", ("## " + "Tests:" + "\n" + input.tests) + "\n" + "\n", function(err){
     if (err){
         console.log(err)
     } else {
@@ -136,7 +136,7 @@ fs.writeFileSync("README.md", ("## " + "Tests:" + "\n" + input.tests) + "\n" + "
     }
 })
 
-fs.writeFileSync("README.md", ("## " + "Questions"  + "\n" + "made by: " + input.username + "\n" + "Email: " + input.email + "\n") + "\n" + "\n", function(err){
+fs.appendFileSync("Gen-README.md", ("## " + "Questions"  + "\n" + "made by: " + input.username + "\n" + "Email: " + input.email + "\n") + "\n" + "\n", function(err){
     if (err){
         console.log(err)
     } else {

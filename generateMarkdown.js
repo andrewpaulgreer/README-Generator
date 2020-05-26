@@ -17,6 +17,7 @@ ${data.installation}
 
 ## License 
 ${data.license}
+![badge](https://img.shields.io/badge/License-${data.license}-green.svg)
 
 ## Usage
 ${data.usage}
