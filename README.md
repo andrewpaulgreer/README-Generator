@@ -21,7 +21,14 @@ run NPM i
 ![badge]{https://img.shields.io/badge/License-MIT-blue.svg}
 
 ## Usage
+first start by running node index.js
+![Getting Started](./media/app-start.jpeg)
 
+then answer questions
+![Getting Started](./media/questions.jpeg)
+
+then find your readme that has been generated
+![Getting Started](./media/generated.jpeg)
 
 ## Contributing
 Andrew Greer

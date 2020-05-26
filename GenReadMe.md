@@ -1,5 +1,8 @@
 
-# README Generator
+# good README Generator
+
+## Description
+this is the description for my good readme generator, answer wuestiosn and the readme will populate
 
 ## Table of Contents
 * [Installation](#installation)
@@ -18,15 +21,15 @@ MIT
 ![badge](https://img.shields.io/badge/License-MIT-green.svg)
 
 ## Usage
-creating readmes specific to each new project
+use it to create good readme's
 
 ## Contributing
 undefined
 
 ## Tests 
-npm init, npm i 
+just run the applicaiton by answering quesiotn after typing in node index.js
 
 ## Questions
 andrewgreer2015@gmail.com
-andrewPaulGreer
+andrewpaulgreer
   
