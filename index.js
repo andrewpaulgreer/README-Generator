@@ -70,7 +70,7 @@ const questions = [
     // using an arrow funciton to append the user input to the readme
    inquirer.prompt(questions).then((input) => {
 
-fs.appendFileSync("README.md", ("# " + input.title)+ "\n" + "\n", function(err) {
+fs.writeFileSync("README.md", ("# " + input.title)+ "\n" + "\n", function(err) {
     
     if (err){
         console.log(err);
@@ -80,7 +80,7 @@ fs.appendFileSync("README.md", ("# " + input.title)+ "\n" + "\n", function(err) 
     }
     
 })
-fs.appendFileSync("README.md", ("## " + "Description" + "\n" + input.description) + "\n" + "\n", function(err){
+fs.writeFileSync("README.md", ("## " + "Description" + "\n" + input.description) + "\n" + "\n", function(err){
     if (err){
         console.log(err)
     } else {
@@ -88,7 +88,7 @@ fs.appendFileSync("README.md", ("## " + "Description" + "\n" + input.description
     }
 })
 
-fs.appendFileSync("README.md", ("## " + "Table of Contents" + "\n" + "* " + "[Installation](#installation)" + "\n" + "* " + "[License](#license)" + "\n" + "* " + "[Usage](#usage)" + "\n" + "* " + "[Contributing](#contributing)" + "\n" + "* " + "[Tests](#tests)" + "\n" + "* " + "[Questions](#questions)")  + "\n" + "\n", function(err){
+fs.writeFileSync("README.md", ("## " + "Table of Contents" + "\n" + "* " + "[Installation](#installation)" + "\n" + "* " + "[License](#license)" + "\n" + "* " + "[Usage](#usage)" + "\n" + "* " + "[Contributing](#contributing)" + "\n" + "* " + "[Tests](#tests)" + "\n" + "* " + "[Questions](#questions)")  + "\n" + "\n", function(err){
     if (err){
         console.log(err)
     } else {
@@ -96,7 +96,7 @@ fs.appendFileSync("README.md", ("## " + "Table of Contents" + "\n" + "* " + "[In
     }
 })
 
-fs.appendFileSync("README.md", ("## " + "Installation" + "\n" + input.installation) + "\n" + "\n", function(err){
+fs.writeFileSync("README.md", ("## " + "Installation" + "\n" + input.installation) + "\n" + "\n", function(err){
     if (err){
         console.log(err)
     } else {
@@ -104,7 +104,7 @@ fs.appendFileSync("README.md", ("## " + "Installation" + "\n" + input.installati
     }
 })
 
-fs.appendFileSync("README.md", ("## " + "License"  + "\n" + "![badge](https://img.shields.io/badge/License-"+ input.license + "-green.svg)") + "\n" + "\n", function(err){
+fs.writeFileSync("README.md", ("## " + "License"  + "\n" + "![badge](https://img.shields.io/badge/License-"+ input.license + "-green.svg)") + "\n" + "\n", function(err){
     if (err){
         console.log(err)
     } else {
@@ -112,7 +112,7 @@ fs.appendFileSync("README.md", ("## " + "License"  + "\n" + "![badge](https://im
     }
 })
 
-fs.appendFileSync("README.md", ("## " + "Usage" + "\n" + input.usage) + "\n" + "\n", function(err){
+fs.writeFileSync("README.md", ("## " + "Usage" + "\n" + input.usage) + "\n" + "\n", function(err){
     if (err){
         console.log(err)
     } else {
@@ -120,7 +120,7 @@ fs.appendFileSync("README.md", ("## " + "Usage" + "\n" + input.usage) + "\n" + "
     }
 })
 
-fs.appendFileSync("README.md", ("## " + "Contributing" + "\n" + input.contributing) + "\n" + "\n", function(err){
+fs.writeFileSync("README.md", ("## " + "Contributing" + "\n" + input.contributing) + "\n" + "\n", function(err){
     if (err){
         console.log(err)
     } else {
@@ -128,7 +128,7 @@ fs.appendFileSync("README.md", ("## " + "Contributing" + "\n" + input.contributi
     }
 })
 
-fs.appendFileSync("README.md", ("## " + "Tests:" + "\n" + input.tests) + "\n" + "\n", function(err){
+fs.writeFileSync("README.md", ("## " + "Tests:" + "\n" + input.tests) + "\n" + "\n", function(err){
     if (err){
         console.log(err)
     } else {
@@ -136,7 +136,7 @@ fs.appendFileSync("README.md", ("## " + "Tests:" + "\n" + input.tests) + "\n" + 
     }
 })
 
-fs.appendFileSync("README.md", ("## " + "Questions"  + "\n" + "made by: " + input.username + "\n" + "Email: " + input.email + "\n") + "\n" + "\n", function(err){
+fs.writeFileSync("README.md", ("## " + "Questions"  + "\n" + "made by: " + input.username + "\n" + "Email: " + input.email + "\n") + "\n" + "\n", function(err){
     if (err){
         console.log(err)
     } else {
