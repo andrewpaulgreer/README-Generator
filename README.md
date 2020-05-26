@@ -18,7 +18,7 @@ This readme is for the homework assigned to create a good readme generator
 run NPM i
 
 ## License
-![badge]{https://img.shields.io/badge/License-MIT-blue.svg}
+![badge](https://img.shields.io/badge/License-MIT-green.svg)
 
 ## Usage
 first start by running node index.js
