@@ -21,7 +21,7 @@ run NPM i
 ![badge]{https://img.shields.io/badge/License-MIT-blue.svg}
 
 ## Usage
-this will be used to create a new README each time
+
 
 ## Contributing
 Andrew Greer

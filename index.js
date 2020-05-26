@@ -58,94 +58,17 @@ const questions = [
         }
         ]
    
-// I did not wind up using this in the end, and know it was given to us to help with the template literal problem.
-// I got started on writing the code before we had started the template literal example, and could not get it to work the append's that I made below. 
-    function writeToFile(filename, data) {
-    
-
-    }
- 
+// Using Template Literal
+// figure out Axios call
 
   function init() {
     // using an arrow funciton to append the user input to the readme
-   inquirer.prompt(questions).then((input) => {
+   inquirer.prompt(questions).then(input => {
+    fs.writeFile("GenReadMe.md", markDown(input), err=>{
+        if (err) throw err
+        console.log('made readme')
+    })
 
-fs.writeFileSync("Gen-README.md", ("# " + input.title)+ "\n" + "\n", function(err) {
-    
-    if (err){
-        console.log(err);
-    } 
-   else {
-        console.log("Your Title has been Generated");
-    }
-    
-})
-fs.appendFileSync("Gen-README.md", ("## " + "Description" + "\n" + input.description) + "\n" + "\n", function(err){
-    if (err){
-        console.log(err)
-    } else {
-        console.log("success")
-    }
-})
-
-fs.appendFileSync("Gen-README.md", ("## " + "Table of Contents" + "\n" + "* " + "[Installation](#installation)" + "\n" + "* " + "[License](#license)" + "\n" + "* " + "[Usage](#usage)" + "\n" + "* " + "[Contributing](#contributing)" + "\n" + "* " + "[Tests](#tests)" + "\n" + "* " + "[Questions](#questions)")  + "\n" + "\n", function(err){
-    if (err){
-        console.log(err)
-    } else {
-        console.log("success")
-    }
-})
-
-fs.appendFileSync("Gen-README.md", ("## " + "Installation" + "\n" + input.installation) + "\n" + "\n", function(err){
-    if (err){
-        console.log(err)
-    } else {
-        console.log("success")
-    }
-})
-
-fs.appendFileSync("Gen-README.md", ("## " + "License"  + "\n" + "![badge](https://img.shields.io/badge/License-"+ input.license + "-green.svg)") + "\n" + "\n", function(err){
-    if (err){
-        console.log(err)
-    } else {
-        console.log("success")
-    }
-})
-
-fs.appendFileSync("Gen-README.md", ("## " + "Usage" + "\n" + input.usage) + "\n" + "\n", function(err){
-    if (err){
-        console.log(err)
-    } else {
-        console.log("success")
-    }
-})
-
-fs.appendFileSync("Gen-README.md", ("## " + "Contributing" + "\n" + input.contributing) + "\n" + "\n", function(err){
-    if (err){
-        console.log(err)
-    } else {
-        console.log("success")
-    }
-})
-
-fs.appendFileSync("Gen-README.md", ("## " + "Tests:" + "\n" + input.tests) + "\n" + "\n", function(err){
-    if (err){
-        console.log(err)
-    } else {
-        console.log("success")
-    }
-})
-
-fs.appendFileSync("Gen-README.md", ("## " + "Questions"  + "\n" + "made by: " + input.username + "\n" + "Email: " + input.email + "\n") + "\n" + "\n", function(err){
-    if (err){
-        console.log(err)
-    } else {
-        console.log("success")
-    }
-})  
-
-})
-
-  }
+  })}
    // calling init function 
     init();

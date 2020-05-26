@@ -1,7 +1,5 @@
-# fdsfdsa
 
-## Description
-fdsf
+# README Generator
 
 ## Table of Contents
 * [Installation](#installation)
@@ -12,22 +10,23 @@ fdsf
 * [Questions](#questions)
 
 ## Installation
-saf
+npm i
 
-## License
+
+## License 
+MIT
 ![badge](https://img.shields.io/badge/License-MIT-green.svg)
 
 ## Usage
-
+creating readmes specific to each new project
 
 ## Contributing
-fsdfdsa
+undefined
 
-## Tests:
-fdsafs
+## Tests 
+npm init, npm i 
 
 ## Questions
-made by: fdsafa
-Email: fdsfsa
-
-
+andrewgreer2015@gmail.com
+andrewPaulGreer
+  
